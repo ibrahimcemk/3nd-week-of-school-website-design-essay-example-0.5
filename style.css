@@ -1,0 +1,118 @@
+
+        
+        /* style Komutlarını "head" etiketi("tag'ın")'in iç kısmına yazarız.
+        /* selector{property:value} şekinde yazarız. (yani seçici{özellik:değer} şeklinde kodu yazmış oluruz.) */
+          
+         
+    
+        p{background-color: rgb(252, 17, 17);}
+        /* örnek olarak paragraf metinlerinin arka plan'ını kırmızı yaparız */
+ 
+        p.muhittin{
+                   color: rgb(60, 255, 0); 
+                   width: 200px; 
+                   border: 5px;
+                   } 
+         
+     
+ 
+        #namık{color: blue;}
+ 
+        .arabsukru{color: rgb(255, 157, 66);}
+ 
+        #n1{
+            background-color: darkblue;
+            color: white;
+            border: 5px solid rgb(219, 255, 58);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0;
+            }
+        
+        /* Not: CSS'de text color,font color vs. yoktur.(yazı tipini direkt color komuduyla değiştiririz.) */
+        
+        /* başına p eklersek sınıfı .. olan p'leri bul demiş oluruz.Örnek olarak yukarıda (p.muhittin) yazdığımız için p etiketindeki muhittin veya muhittinleri bul
+         demiş oluruz. */
+        /* id'yi = id , sınıf ,etiket şeklinde veya ek olarak id , sınıf , etiket.sınıf şeklinde yazabiliriz. */
+ 
+        /* burada muhittin sınıfının rengini yeşil yaparak tüm muhittin paragraf yazılarını yeşil yaptık ve ok olarak genişliğini 200 pixel olarak tanımlamış olduk. */
+ 
+        /* id'si namık olan paragraf etiketleri mavi olarak gözüküyor artık. */
+ 
+        /* aynı şekilde arabsukru sınıfındaki etiket'e turuncu renk vererek yazıları turuncu renge çevirmiş oluyoruz. */
+ 
+        /* n1 id'sindeki yazı stilini de beyaz yaparız ve bir border veririz,border yan/kenar demektir, 5 pixellik bir düz çizgi ekleriz ve rengini sarımsı bir renk yaparız. 
+         Çizgiyi Noktalı hale getirmek için dotted komudunu vs. kullanabiliriz.*/
+ 
+        /* n1'e padding yani iç boşluk ekleriz,örneklemek için 20 pixellik bir iç boşluk verdim.(padding=kenarlıkla içerik arasında kalan yere verilen ad/isim.) */
+ 
+        /* yazının kenarlarında otomatik olarak 16 pixellik dış boşluk yani margin verir istersek bunu kaldırabiliriz.
+         örnek olması açısından margin 0px komuduyla tanımlamış oldum kodun kısa halini vscode'da m0 yazıp enter tuşuna basarak yazabilirsiniz.  */
+ 
+        /* border-radius la'da yazının kenarlarına çektiğimiz kenarlıkları da ovalleştiririz. örnek olarak radius'unu yani yarıçap/etki alanını
+         8 pixel olarak tamamlayıp yeşilimsi bir renk'le tanımlamış oldum. */
+ 
+        /* Not: CSS dosya veya komut saturlarında (id="name" komudu style'da # işaretiyle belirtilir) (class="name"ise . ile belirtilir.) */
+ 
+        /* örneğin class="namık" yazarsak CSS dosyasında veya "HTML Komut Satırı içinde style  .namık{kod içeriği} /style şeklinde belirtiriz. */
+ 
+        /* Ek şekilde id="rastgeleisim" şeklinde yazarsak yine CSS dosyasında veya "HTML Komut Satırı içinde style #rastgeleisim /style şeklinde belirtiriz. */
+ 
+        a{  
+          display: block; background-color: 
+          goldenrod; width: 200px;
+          border: 8px dotted rgb(0, 255, 13);
+          padding: 16px;
+          margin-left: 25px 0 5px 15px;
+         }
+         
+        /* a'ya yaptığımız margin-left komuduyla birlikte soldan dış boşluk vermiş oluruz,örnek olması açısından soldan 16 pixellik bir dış boşluk bıraktım. */
+ 
+        /* a'ya yaptığımız 25px,5px,15px işleminde , ilk verdiğimiz pixel üst boşluğu ifade eder,ve saat yönüyle pixel vermeye devam eder. yani üst,sağ,alt,sol 
+        şeklinde devam eder. Not:Tekli verirsek her yerden eşit pixelde verir, ikili girersek yani 20px 5px yaparsak 20 pixel üst alta 5 pixel sağ sol'a verir.*/
+        
+        /* a'ya yaptığımız border komudu style'a yazdığımız a etiketinde vs. aktif olarak çalışmaktadır. */
+ 
+        /* a'ya yaptığımız padding 32 pixelle birlikte,32 pixellik iç boşluk veririz. */
+ 
+        /* muhittindeki gibi genişliği 200 pixel yaparsak bile bize 200 pixel yer/alan tanımlamaz çünkü a'nın inline yani satır içi bir eleman olmasından kaynaklıdır.  */
+ 
+        /* ama display block şeklinde yaparsak artık bu eleman inline bir eleman olarak değilde block eleman şeklinde gözükür. */
+ 
+        /* not: blok eleman yaparsak artık alt alta gözükecektir. */
+ 
+        /* yan yana yapmak istiyorsak inline blok şekline çevirmemiz gerekecektir. */
+ 
+        /* burada ise a etiketindekilere goldenrod yani Altın Başak rengini veriyoruz. */
+ 
+        /* Dip Not: başına . veya # eklemedik çünkü kendisi ne bir id'dir ne bir class'dır kendi başına bir etikettir,o yüzden bir ifade belirtmeye gerek yoktur. */
+ 
+        body{background-color: rgb(138, 185, 255);}
+ 
+        /* burada ise website'nin arka plan'ına açık mavi rengini veririz. */
+        
+        /* not: CLASS Ve ID  bir niteliktir. Etiketin açılış kısmına ve büyüktür işaretinin hemen öncesine yazılır,insiyatifinize göre büyüktür işaretinin yanına boşluk 
+        bırakarak yazabilirsiniz.  örnek bknz: p class="isim"> şeklinde değilde p clas="isim"   > şeklinde vs. */
+       
+       /* Nitelikleri farklı etiketlerede verebiliriz,aynı etiket içinde kalma zorunluluğumuz yoktur. */
+
+       span{color: rgb(94, 0, 0);}
+       .bg-blue{ background-color: rgb(87, 84, 78);}
+
+       /* ve span etiketiyle sardığımız etiketi direkt {}'yle sarıp içine renk kodunu yazarak,sadece sardığımız yerin rengini değiştirmiş oluruz.  */
+       /* span komuduna bir class yani bir sınıf ekleyerek sadece span komuduna aldığımız yerlerin arka plan'ını değiştirebiliriz.
+        Örnek olması amaçlı renk skalasından  gri tonlarında renk seçtim. */
+
+        div{color: rgb(66, 28, 0); 
+           background-color: rgb(255, 255, 255); }
+
+        /* span'de yaptığımız şeyi div komuduyla da yapabiliriz,html'de de belirttiğimiz üzere birebir aynı komutlardır.
+         Tek farkı span satır içi bir komuttur div ise blok bir komuttur.*/
+         
+        /* Web sitesinde yazı yazdığımızda otomatik olarak 8 pixellik bir dış boşluk yani margin verir,onu ortadan kaldırmak için */
+        
+         body{margin: 0;}
+
+        /*Komudunu kullanmamız yeterlidir. */
+       
+        
